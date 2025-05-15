@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Contaminación</title>
+</head>
+<body>
+    <h1>Cálculo de Carga de Contaminantes</h1>
+    <form method="post">
+        <label>Concentración (c) [valores separados por comas]:</label><br>
+        <input type="text" name="c" required><br>
+        <label>Velocidad (v) [valores separados por comas]:</label><br>
+        <input type="text" name="v" required><br>
+        <label>a:</label><br>
+        <input type="text" name="a" required><br>
+        <label>b:</label><br>
+        <input type="text" name="b" required><br>
+        <label>Método:</label><br>
+        <select name="metodo">
+            <option value="trapecio">Trapecio</option>
+            <option value="simpson">Simpson</option>
+        </select><br><br>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
